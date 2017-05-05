@@ -78,7 +78,7 @@
   <div class="col-md-12 alert <?php echo (bakalariup("skola.gbl.cz/bakalari/login.aspx") ? "alert-success" : "alert-danger")?>">
     <div class="col-md-11 col-md-offset-1">
     <h1 style="font-size: 72px"><?php echo (bakalariup("skola.gbl.cz/bakalari/login.aspx") ? "<i class='fa fa-thumbs-up' aria-hidden='true'></i>" : "<i class='fa fa-thumbs-down' aria-hidden='true'></i>")?></h1>
-    <h1><?php echo (bakalariup("skola.gbl.cz/bakalari/login.aspx") ? "Bakaláři fungují" : "Bakaláři nefungují")?></h1>
+    <h1><?php echo (bakalariup("skola.gbl.cz/bakalari/login.aspx") ? "Bakaláři jsou dostupní" : "Bakaláři nejsou dostupní")?></h1>
     </div>
   </div>
   <div class="col-md-6">
