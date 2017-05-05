@@ -1,9 +1,9 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/font-awesome.css" >
   <title>BakalariDown</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <?php
   require('config.php');
@@ -75,6 +75,12 @@
     <hr />
   </div>
   <div class="clearfix"></div>
+  <div class="col-md-12 alert <?php echo (bakalariup("skola.gbl.cz/bakalari/login.aspx") ? "alert-success" : "alert-danger")?>">
+    <div class="col-md-11 col-md-offset-1">
+    <h1 style="font-size: 72px"><?php echo (bakalariup("skola.gbl.cz/bakalari/login.aspx") ? "<i class='fa fa-thumbs-up' aria-hidden='true'></i>" : "<i class='fa fa-thumbs-down' aria-hidden='true'></i>")?></h1>
+    <h1><?php echo (bakalariup("skola.gbl.cz/bakalari/login.aspx") ? "Bakaláři fungují" : "Bakaláři nefungují")?></h1>
+    </div>
+  </div>
   <div class="col-md-6">
     <div id="piechart" style="width: 100%; min-height: 450px;"></div>
   </div>
