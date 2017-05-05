@@ -47,15 +47,15 @@
         //data.addColumn('number', 'ID');
         data.addColumn('string', 'Time');
         data.addColumn('boolean', 'Online?');
-        data.addRows([
+        rows = [
           <?php
           foreach ($stmt as $row) {
             $answer = ($row['Answer'] == 1 ? 'true' : 'false');
             //echo "[".$row['ID'].", '".$row['Time']."', ".$answer."],";
             echo "['".$row['Time']."', ".$answer."],";
           } ?>
-        ]);
-
+        ];
+        data.addRows(rows)
         var table = new google.visualization.Table(document.getElementById('table_div'));
 
         table.draw(data, {showRowNumber: true, width: '100%', height: '40%'});
